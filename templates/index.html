@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سیستم تحلیل کد</title>
+    <link rel="stylesheet" href="../static/style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>سامانه تحلیل کد</h1>
+            
+        </div>
+    </header>
+    
+    <main>
+        <section id="home">
+            <div class="container">
+                <h2>خوش آمدید به سامانه تحلیل کد</h2>
+                <p>لطفاً فایل کد خود را بارگذاری کنید تا تحلیل آن را مشاهده کنید.</p>
+                
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <input type="file" name="file" required><br><br>
+                    <button type="submit">بارگذاری کد</button>
+                </form>
+                
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>درباره سامانه</h2>
+                <p>این سامانه به تحلیل کدهای برنامه‌نویسی شما پرداخته و گزارشی از آسیب‌پذیری‌ها و بهینه‌سازی‌های پیشنهادی ارائه می‌دهد.</p>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>همه حقوق محفوظ است <br>  زینونوآ همراه نوآوری و خلاقیت شما!</p>
+        </div>
+    </footer>
+</body>
+</html>

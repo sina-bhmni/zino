@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دانلود گزارش</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>سامانه تحلیل کد</h1>
+        </div>
+    </header>
+
+    <main>
+        <section id="download">
+            <div class="container">
+                <h2>✅ گزارش شما آماده است!</h2>
+                <p>شما می‌توانید گزارش‌های تحلیلی خود را از لینک‌های زیر دانلود کنید:</p>
+                
+                <div class="download-buttons">
+                    <a href="{{ url_for('download_file', filename=report_name+'_combined.html') }}" class="btn">📄 دانلود گزارش HTML</a>
+                    <a href="{{ url_for('download_file', filename=report_name+'.xlsx') }}" class="btn">📊 دانلود گزارش Excel</a>
+                </div>
+
+                <a href="/" class="btn back-btn">🔄 بازگشت به صفحه اصلی</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>همه حقوق محفوظ است <br> زینونوآ همراه نوآوری و خلاقیت شما!</p>
+        </div>
+    </footer>
+</body>
+</html>
